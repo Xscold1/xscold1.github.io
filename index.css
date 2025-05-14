@@ -1,0 +1,15 @@
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+.toggle-btn
+{
+  border: 5px;
+  border-style: solid;
+  border-color: beige;
+  border-radius: 15%;
+  width: 10%;
+  height: inherit;
+}
