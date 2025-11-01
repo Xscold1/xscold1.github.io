@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="/logo.png" />
-    <link rel="stylesheet" href="index.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xscold</title>
+    <link rel="icon" type="image/png" href="/public/logo.png" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header>
@@ -16,21 +16,30 @@
         </label>
       </nav>
     </header>
-    <main>
-      <div class="main">
-        <img class="firstPageBg" src="./public/logo.png" />
-  
-        <div class="introName">
-          <h1>Hi, I'm Vash</h1>
-          <h1>Full-Stack Developer</h1>
-        </div>
-      </div>
 
-      <div class="imgLinks">
-        <img class="logoSize" src="./public/fb.png" alt="">
-        <img class="logoSize" src="./public/github-dark.png" alt="">
-        <img class="logoSize" src="./public/linkedin.png" alt="">
-      </div>
+    <main>
+      <section class="container">
+        <img class="firstPageBg" src="./public/logo.png" alt="background logo" />
+
+        <div class="content">
+          <div class="typewriter">
+            <h1>Hi, I’m <span class="highlight">Vash</span></h1>
+            <p>Web Developer</p>
+          </div>
+        </div>
+
+        <div class="imgLinks">
+          <img class="logoSize" src="/public/github-dark.png" alt="GitHub" loading="lazy" />
+          <img class="logoSize" src="/public/linkedin.png" alt="LinkedIn" loading="lazy" />
+          <img class="logoSize" src="/public/fb.png" alt="Facebook" loading="lazy" />
+        </div>
+      </section>
     </main>
+
+    <script>
+      window.addEventListener("load", () => {
+        document.body.classList.add("loaded");
+      });
+    </script>
   </body>
 </html>
