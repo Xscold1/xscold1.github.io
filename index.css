@@ -12,6 +12,15 @@ body {
   overflow: hidden;
 }
 
+main{
+  display: flex;
+  width: 200vw;
+  overflow-x: scroll;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  scroll-snap-type:mandatory;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -30,6 +39,16 @@ nav {
   display: inline-block;
   width: 55px;
   height: 30px;
+}
+
+button{
+  cursor: pointer;
+}
+
+.next{
+  padding: 10%;
+  width: 100px;
+  border-radius: 10%;
 }
 
 .switch input {
@@ -70,15 +89,27 @@ input:checked + .slider:before {
   transform: translateX(25px);
 }
 
-.container {
+.page {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100vw;
+}
+
+.page-1{
   position: relative;
-  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 40px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.page-2{
+  height: 100vh;
+  width: 100vw;
 }
 
 .firstPageBg {
@@ -169,4 +200,10 @@ body:not(.loaded) .logoSize {
   .imgLinks {
     gap: 25px;
   }
+}
+
+#next, #prev {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
 }

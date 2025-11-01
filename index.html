@@ -8,38 +8,56 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider round"></span>
-        </label>
-      </nav>
-    </header>
-
-    <main>
-      <section class="container">
-        <img class="firstPageBg" src="./public/logo.png" alt="background logo" />
-
-        <div class="content">
-          <div class="typewriter">
-            <h1>Hi, I’m <span class="highlight">Vash</span></h1>
-            <p>Web Developer</p>
+    <main id="main">
+      <section class="page">
+        <div class="page-1">
+          <img
+            class="firstPageBg"
+            src="./public/logo.png"
+            alt="background logo"
+          />
+  
+          <div class="content">
+            <div class="typewriter">
+              <h1>Hi, I’m <span class="highlight">Vash</span></h1>
+              <p>Web Developer</p>
+            </div>
           </div>
+  
+          <div class="imgLinks">
+            <a href="https://github.com/Xscold1" target="_blank"
+              ><img
+                class="logoSize"
+                src="/public/github-dark.png"
+                alt="GitHub"
+                loading="lazy"
+            /></a>
+            <a href="https://www.linkedin.com/in/xscold/" target="_blank"
+              ><img
+                class="logoSize"
+                src="/public/linkedin.png"
+                alt="LinkedIn"
+                loading="lazy"
+            /></a>
+            <a href="https://www.facebook.com/xscold/" target="_blank"
+              ><img
+                class="logoSize"
+                src="/public/fb.png"
+                alt="Facebook"
+                loading="lazy"
+            /></a>
+          </div>
+          <button id="next">next</button>
         </div>
+      </section>
 
-        <div class="imgLinks">
-          <img class="logoSize" src="/public/github-dark.png" alt="GitHub" loading="lazy" />
-          <img class="logoSize" src="/public/linkedin.png" alt="LinkedIn" loading="lazy" />
-          <img class="logoSize" src="/public/fb.png" alt="Facebook" loading="lazy" />
+      <section class="page">
+        <div class="page-2">
+          <h1>Skills -----------------------></h1>
+          <button id="prev">asdasdas</button>
         </div>
       </section>
     </main>
-
-    <script>
-      window.addEventListener("load", () => {
-        document.body.classList.add("loaded");
-      });
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
