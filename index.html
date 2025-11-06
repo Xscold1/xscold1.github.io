@@ -47,12 +47,11 @@
                 loading="lazy"
             /></a>
           </div>
-          <button id="next">next</button>
-        </div>
+        </4iv>
+        <button class="next" onclick="scrollToNext()">&#10094;</button>
       </section>
 
       <section class="page">
-        <button id="prev">prev</button>
         <div class="page-2">
           <header>
             <nav class="nav2">
@@ -67,16 +66,64 @@
               </div>
             </nav>
           </header>
-          <hr />
           <div class="expHeader">
-            <p data-exp="gcg">
-              Present - 2024: Governance Commission for GOOCs
-            </p>
+            <p data-exp="gcg">Present - 2024: Governance Commission for GOOCs</p>
+            <p data-exp="freelancing">2023 - Present: Free Lancing</p>
             <p data-exp="da">2023: Department of Agriculture</p>
-            <p data-exp="fl">2023 - Present: Free Lancing</p>
+            <p data-exp="intern">2023: RP Innotech Inc</p>
           </div>
-          <hr />
           <div id="expContent"></div>
+          <button class="prev" onclick="scrollToPrev()">&#10094;</button>
+          <button class="next" onclick="scrollToNext()">&#10095;</button>
+        </div>
+      </section>
+      <section class="page">
+        <div class="page-3">
+          <header>
+            <nav class="nav2">
+              <div class="logoImage">
+                <img class="navLogo" src="./public//logo.png" alt="" />
+              </div>
+              <div>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </nav>
+          </header>
+          <div class="page3Content">
+            <div>
+              <h1>Projects</h1>
+              <h5>Swipe through my recent work</h5>
+            </div>
+            <div class="page3Main">
+              <div class="carousel">
+                <div class="carousel-slider">
+                  <img class="carouselImage" src="./public/projects/gcg/landing-page.png" alt="">
+                </div>
+              </div>
+              <div class="projectDesc">
+                <h1>GCG Website</h1>
+                <h1>Sample description</h1>
+                <label for="">Tech stack</label>
+                <ul class="skillBadge">
+                  <li>Alpine JS</li>
+                  <li>Typescript</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </div>
+            <div class="projectNav">
+              <button class="projPrev" onclick="scrollPrevProj()">&#10094;</button>
+              <button class="projNext" onclick="scrollNextProj()">&#10095;</button>
+            </div>
+            <div>
+              <button class="prev" onclick="scrollToPrev()">&#10094;</button>
+              <button class="next" onclick="scrollToNext()">&#10095;</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
