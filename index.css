@@ -1,3 +1,4 @@
+/* =============== GLOBAL RESET =============== */
 * {
   margin: 0;
   padding: 0;
@@ -12,15 +13,16 @@ body {
   overflow: hidden;
 }
 
+/* =============== MAIN LAYOUT =============== */
 main {
   display: flex;
   width: 300vw;
-  overflow-x: scroll;
   overflow: hidden;
   transition: transform 0.8s ease-in-out;
   scroll-snap-type: x mandatory;
 }
 
+/* =============== NAVBAR =============== */
 nav {
   display: flex;
   justify-content: center;
@@ -34,6 +36,7 @@ nav {
   height: 30px;
 }
 
+/* =============== SWITCH =============== */
 .switch {
   position: relative;
   display: inline-block;
@@ -83,11 +86,13 @@ input:checked + .slider:before {
   transform: translateX(25px);
 }
 
+/* =============== PAGE LAYOUTS =============== */
 .page {
   height: 100vh;
   width: 100vw;
 }
 
+/* =============== PAGE 1 (INTRO) =============== */
 .page-1 {
   position: relative;
   display: flex;
@@ -175,20 +180,7 @@ body:not(.loaded) .logoSize {
   transition: none;
 }
 
-@media (max-width: 768px) {
-  .firstPageBg {
-    width: 60%;
-  }
-
-  .typewriter {
-    font-size: 2rem;
-  }
-
-  .imgLinks {
-    gap: 25px;
-  }
-}
-
+/* =============== NAV BUTTONS =============== */
 .next,
 .prev {
   position: fixed;
@@ -242,17 +234,21 @@ body:not(.loaded) .logoSize {
   }
 }
 
-/* page 2 */
+/* =============== PAGE 2 (EXPERIENCE) =============== */
 .page-2 {
-  height: 100vh;
-  width: 100vw;
+  background: linear-gradient(135deg, #f9f6f0 0%, #fff8ee 100%);
 }
+
+.pageHeader{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
 
 .nav2 {
   display: flex;
-  justify-content: start;
-  align-items: center;
-  margin: 0 2% 0 2%;
+  justify-content: space-between;
+  margin: 0 2%;
   padding: 0;
 }
 
@@ -262,60 +258,85 @@ body:not(.loaded) .logoSize {
   opacity: 0.3;
 }
 
-.logoImage {
-  flex-grow: 1;
-}
-
 .expHeader {
   display: flex;
-  justify-content: flex-start;
-  margin-left: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px auto;
+  width: 80%;
+  text-align: center;
 }
 
 .expHeader p {
   flex-grow: 1;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  transition: transform 0.5s;
+  padding: 12px 18px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
 }
 
 .expHeader p:hover {
-  background: white;
-  cursor: pointer;
-  transform: scale(1.01);
+  background: #fbbf24;
+  color: #fff;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.2);
 }
 
 #expContent {
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: center;
-  margin-top: 2%;
-}
-
-.keyRespCard {
-  padding: 5% 10% 5% 10%;
-  margin: 15px 0 15px 0;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  font-family: Arial, sans-serif;
-  color: #333333;
-}
-
-.keyRespCard h1 {
-  margin-bottom: 5%;
-}
-
-.keyRespCard ul li {
-  margin-bottom: 10px;
+  width: 80%;
+  margin: 0 auto;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .expContainer {
-  width: 40%;
-  margin: 0 auto;
-  text-align: left;
+  background: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 600px;
+  max-height: 70%;
+  width: 100%;
+  padding: 3% 5%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.expContainerBody{
+  width: 100%;
+  height: 100%;
+}
+
+.expContainerSkills label{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyRespCard {
+  padding: 4%;
+  background: #fffdf9;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.keyRespCard h1 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #111;
+}
+
+.keyRespCard ul {
+  padding-left: 20px;
+  line-height: 1.8;
 }
 
 .skillBadge {
@@ -331,12 +352,16 @@ body:not(.loaded) .logoSize {
   background: linear-gradient(135deg, #fbbf24, #f97316);
   color: #fff;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   padding: 10px 24px;
   border-radius: 999px;
   box-shadow: 0 4px 8px rgba(249, 115, 22, 0.25);
   transition: all 0.3s ease;
-  border: none;
+}
+
+.skillBadge li:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(249, 115, 22, 0.35);
 }
 
 label {
@@ -344,34 +369,41 @@ label {
   margin-top: 20px;
 }
 
-/* page 3 */
+/* =============== PAGE 3 (PROJECTS) =============== */
 .page-3 {
-  height: 100vh;
-  width: 100vw;
+  background: linear-gradient(135deg, #fff8ee 0%, #f9f6f0 100%);
 }
 
-.page-3 h1 {
-  margin-top: 20px;
+.page3Content {
+  width: 85%;
+  margin: 0 auto;
 }
 
-.page3Content{
-  margin: 30px;
+.page3Content h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: #111;
 }
 
-.page3Main{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  height: 70%;
+.page3Content h5 {
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.page3Main {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 3%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 550px;
+  max-height: 90%;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:70px;
-}
-
-.projectDesc{
-  display: flex;
-  flex-direction: column;
+  gap: 70px;
 }
 
 .carousel {
@@ -381,7 +413,9 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; 
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-slider {
@@ -398,10 +432,32 @@ label {
   display: block;
 }
 
-.projectNav{
+.projectDesc {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.projectDesc h1:first-child {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.projectDesc h1:last-child {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #444;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.projectNav {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 40px;
+  margin-top: 40px;
 }
 
 .projPrev,
@@ -423,14 +479,6 @@ label {
   z-index: 10;
 }
 
-.projectNav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  margin-top: 20px;
-}
-
 .projPrev:hover,
 .projNext:hover {
   transform: scale(1.1);
@@ -447,3 +495,43 @@ label {
   transform: translateX(3px) scale(1.1);
 }
 
+/* =============== ANIMATIONS =============== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =============== RESPONSIVE =============== */
+@media (max-width: 768px) {
+  .firstPageBg {
+    width: 60%;
+  }
+
+  .typewriter {
+    font-size: 2rem;
+  }
+
+  .imgLinks {
+    gap: 25px;
+  }
+
+  .expContainer {
+    width: 90%;
+    padding: 6% 8%;
+  }
+
+  .page3Main {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .projectDesc {
+    text-align: center;
+  }
+}

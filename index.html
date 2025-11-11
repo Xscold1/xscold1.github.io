@@ -20,7 +20,7 @@
           <div class="content">
             <div class="typewriter">
               <h1>Hi, I’m <span class="highlight">Vash</span></h1>
-              <p>Web Developer</p>
+              <p>Full-Stack Web Developer</p>
             </div>
           </div>
 
@@ -47,17 +47,18 @@
                 loading="lazy"
             /></a>
           </div>
-        </4iv>
+        </div>
         <button class="next" onclick="scrollToNext()">&#10094;</button>
       </section>
 
       <section class="page">
         <div class="page-2">
-          <header>
+          <header class="pageHeader">
             <nav class="nav2">
               <div class="logoImage">
                 <img class="navLogo" src="./public//logo.png" alt="" />
               </div>
+              <h1>Experiences</h1>
               <div>
                 <label class="switch">
                   <input type="checkbox" />
@@ -67,8 +68,10 @@
             </nav>
           </header>
           <div class="expHeader">
-            <p data-exp="gcg">Present - 2024: Governance Commission for GOOCs</p>
-            <p data-exp="freelancing">2023 - Present: Free Lancing</p>
+            <p data-exp="gcg">
+              Present - 2024: Governance Commission for GOOCs
+            </p>
+            <p data-exp="freelancing">2023 - Present: Freelance</p>
             <p data-exp="da">2023: Department of Agriculture</p>
             <p data-exp="intern">2023: RP Innotech Inc</p>
           </div>
@@ -79,11 +82,12 @@
       </section>
       <section class="page">
         <div class="page-3">
-          <header>
+          <header class="pageHeader">
             <nav class="nav2">
               <div class="logoImage">
                 <img class="navLogo" src="./public//logo.png" alt="" />
               </div>
+              <h1>Projects</h1>
               <div>
                 <label class="switch">
                   <input type="checkbox" />
@@ -93,14 +97,14 @@
             </nav>
           </header>
           <div class="page3Content">
-            <div>
-              <h1>Projects</h1>
-              <h5>Swipe through my recent work</h5>
-            </div>
             <div class="page3Main">
               <div class="carousel">
                 <div class="carousel-slider">
-                  <img class="carouselImage" src="./public/projects/gcg/landing-page.png" alt="">
+                  <img
+                    class="carouselImage"
+                    src="./public/projects/gcg/landing-page.png"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="projectDesc">
@@ -116,8 +120,12 @@
               </div>
             </div>
             <div class="projectNav">
-              <button class="projPrev" onclick="scrollPrevProj()">&#10094;</button>
-              <button class="projNext" onclick="scrollNextProj()">&#10095;</button>
+              <button class="projPrev" onclick="scrollPrevProj()">
+                &#10094;
+              </button>
+              <button class="projNext" onclick="scrollNextProj()">
+                &#10095;
+              </button>
             </div>
             <div>
               <button class="prev" onclick="scrollToPrev()">&#10094;</button>
