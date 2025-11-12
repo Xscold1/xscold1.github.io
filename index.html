@@ -9,6 +9,7 @@
   </head>
   <body>
     <main id="main">
+      <!-- Page 1 -->
       <section class="page">
         <div class="page-1">
           <img
@@ -50,7 +51,7 @@
         </div>
         <button class="next" onclick="scrollToNext()">&#10094;</button>
       </section>
-
+      <!-- Page 2 -->
       <section class="page">
         <div class="page-2">
           <header class="pageHeader">
@@ -80,6 +81,7 @@
           <button class="next" onclick="scrollToNext()">&#10095;</button>
         </div>
       </section>
+      <!-- Page 3 -->
       <section class="page">
         <div class="page-3">
           <header class="pageHeader">
@@ -97,40 +99,101 @@
             </nav>
           </header>
           <div class="page3Content">
-            <div class="page3Main">
-              <div class="carousel">
-                <div class="carousel-slider">
-                  <img
-                    class="carouselImage"
-                    src="./public/projects/gcg/landing-page.png"
-                    alt=""
-                  />
+            <div class="projectsContainer">
+              <div id="projectsData">
+                <div class="projects">
+                  <div class="carousel">
+                    <div class="carousel-slider">
+                      <img
+                        class="carouselImage"
+                        src="./public/projects/gcg/landing-page.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="projectDesc">
+                    <h1>GCG Website</h1>
+                    <p>
+                      A static website for a government agency that features the
+                      agency's services, news, and contact information. It is a
+                      responsive website that can be viewed on mobile and
+                      desktop devices.
+                    </p>
+                    <label for="">Tech stack</label>
+                    <ul class="skillBadge">
+                      <li>Alpine JS</li>
+                      <li>Typescript</li>
+                      <li>PHP</li>
+                      <li>MySQL</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="projects">
+                  <div class="carousel">
+                    <div class="carousel-slider">
+                      <img
+                        class="carouselImage"
+                        src="./public/projects/gcg/landing-page.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="projectDesc">
+                    <h1>GCG Website</h1>
+                    <p>
+                      A static website for a government agency that features the
+                      agency's services, news, and contact information. It is a
+                      responsive website that can be viewed on mobile and
+                      desktop devices.
+                    </p>
+                    <label for="">Tech stack</label>
+                    <ul class="skillBadge">
+                      <li>Alpine JS</li>
+                      <li>Typescript</li>
+                      <li>PHP</li>
+                      <li>MySQL</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="projects">
+                  <div class="carousel">
+                    <div class="carousel-slider">
+                      <img
+                        class="carouselImage"
+                        src="./public/projects/gcg/landing-page.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="projectDesc">
+                    <h1>GCG Website</h1>
+                    <p>
+                      A static website for a government agency that features the
+                      agency's services, news, and contact information. It is a
+                      responsive website that can be viewed on mobile and
+                      desktop devices.
+                    </p>
+                    <label for="">Tech stack</label>
+                    <ul class="skillBadge">
+                      <li>Alpine JS</li>
+                      <li>Typescript</li>
+                      <li>PHP</li>
+                      <li>MySQL</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="projectDesc">
-                <h1>GCG Website</h1>
-                <h1>Sample description</h1>
-                <label for="">Tech stack</label>
-                <ul class="skillBadge">
-                  <li>Alpine JS</li>
-                  <li>Typescript</li>
-                  <li>PHP</li>
-                  <li>MySQL</li>
-                </ul>
+              <div class="projectNav">
+                <button class="projPrev" onclick="scrollPrevProj()">
+                  &#10094;
+                </button>
+                <button class="projNext" onclick="scrollNextProj()">
+                  &#10095;
+                </button>
               </div>
             </div>
-            <div class="projectNav">
-              <button class="projPrev" onclick="scrollPrevProj()">
-                &#10094;
-              </button>
-              <button class="projNext" onclick="scrollNextProj()">
-                &#10095;
-              </button>
-            </div>
-            <div>
-              <button class="prev" onclick="scrollToPrev()">&#10094;</button>
-              <button class="next" onclick="scrollToNext()">&#10095;</button>
-            </div>
+            <button class="prev" onclick="scrollToPrev()">&#10094;</button>
+            <button class="next" onclick="scrollToNext()">&#10095;</button>
           </div>
         </div>
       </section>

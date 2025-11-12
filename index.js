@@ -1,5 +1,4 @@
 let currentPage = 0;
-const main = document.getElementById("main");
 
 function scrollToNext() {
   const scrollAmount = window.scrollX + window.innerWidth;
@@ -17,6 +16,7 @@ function scrollToPrev() {
   });
 }
 
+//Dynamic Experience Page ---------------------------------
 const experiences = {
   gcg: `
     <div class="expContainer">
@@ -150,8 +150,9 @@ const experiences = {
   `,
 };
 
-//Set default experience to present experience
 const expContent = document.getElementById("expContent");
+
+//Set default experience to present experience
 expContent.innerHTML = experiences["gcg"];
 
 document.querySelectorAll(".expHeader p").forEach((el) => {
