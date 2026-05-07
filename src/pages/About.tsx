@@ -19,32 +19,6 @@ const skills = [
 ]
 
 export default function About() {
-  const carouselRef = useRef<HTMLDivElement | null>(null)
-
-  useEffect(() => {
-    const container = carouselRef.current
-    if (!container) return
-
-    const speed = 4
-    let frameId: number
-
-    const animate = () => {
-      if (!container) return
-
-      const maxScroll = container.scrollWidth / 2
-      if (maxScroll <= 0) {
-        frameId = window.requestAnimationFrame(animate)
-        return
-      }
-
-      const nextScroll = container.scrollLeft + speed
-      container.scrollLeft = nextScroll >= maxScroll ? nextScroll - maxScroll : nextScroll
-      frameId = window.requestAnimationFrame(animate)
-    }
-
-    frameId = window.requestAnimationFrame(animate)
-    return () => window.cancelAnimationFrame(frameId)
-  }, [])
   return (
     <section id="about" className="px-6 py-20 sm:px-8 lg:px-10">
       <div className="mx-auto max-w-7xl space-y-10">
@@ -94,8 +68,8 @@ export default function About() {
             </span>
           </div>
 
-          <div ref={carouselRef} className="mt-6 overflow-x-auto pb-4 scroll-smooth scrollbar-hide">
-            <div className="flex min-w-max gap-4 snap-x snap-mandatory">
+          <div className="mt-6 overflow-x-auto pb-4 scroll-smooth">
+            <div className="flex">
               {[...skills, ...skills].map((skill, index) => (
                 <SkillBadge key={`${skill.name}-${index}`} name={skill.name} icon={skill.icon} />
               ))}
