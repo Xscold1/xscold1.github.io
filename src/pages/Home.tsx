@@ -3,18 +3,18 @@ export default function Home() {
     <main id="home" className="relative min-h-screen overflow-hidden bg-slate-950 text-slate-100">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(56,189,248,0.2),_transparent_18%),radial-gradient(circle_at_20%_10%,_rgba(168,85,247,0.18),_transparent_16%),radial-gradient(circle_at_80%_20%,_rgba(139,92,246,0.16),_transparent_14%),linear-gradient(180deg,_#020617_0%,_#050b1d_100%)]" />
 
-      <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 py-10 sm:px-8 lg:px-10">
+      <div className="relative mx-auto min-h-screen max-w-7xl pt-70 px-6 py-10 sm:px-8 lg:px-10">
         <section className="space-y-8 text-center">
 
           <div className="space-y-6">
             <h1 className="text-5xl font-black tracking-tight text-white sm:text-6xl">
               Full Stack <span className="bg-linear-to-r from-sky-500 via-violet-500 to-fuchsia-500 bg-clip-text text-transparent">Web Developer</span>
             </h1>
-            <p className="mx-auto max-w-2xl text-base leading-8 text-slate-200 sm:text-lg my-0">
+            <p className="w-full tracking-[.40em] font-bold leading-8 text-slate-200 sm:text-4xl my-4">
               Vash Ivan Rey S. Ramos
             </p>
-            <p className="mx-auto max-w-2xl text-base leading-8 text-slate-200 sm:text-lg my-0">
-              Full-stack developer building practical web applications.
+            <p className="mx-auto max-w-2xl text-base leading-8 text-slate-200 pt-7 sm:text-lg my-0">
+              Making imaginations come to life through code.
             </p>
           </div>
 

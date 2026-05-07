@@ -56,7 +56,7 @@ export default function Projects() {
     <section id="projects" className="px-6 py-20 sm:px-8 lg:px-10">
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
-          <p className="text-sm uppercase tracking-[0.32em] text-sky-500/75">Featured Projects</p>
+          <p className="text-2xl uppercase tracking-[0.32em] text-sky-500/75">Featured Projects</p>
           <h2 className="mt-3 text-4xl font-semibold tracking-tight text-white sm:text-5xl">A selection of my recent work</h2>
         </div>
 
