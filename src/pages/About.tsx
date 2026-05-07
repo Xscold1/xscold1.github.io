@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react'
 import SkillBadge from '../components/SkillBadge'
 
 const skills = [
