@@ -25,7 +25,7 @@ export default function About() {
     const container = carouselRef.current
     if (!container) return
 
-    const speed = 1
+    const speed = 4
     let frameId: number
 
     const animate = () => {
