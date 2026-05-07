@@ -35,18 +35,18 @@ export default function ProjectModal({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm">
-      <div className="relative max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-4xl border border-slate-200/70 bg-white shadow-2xl dark:border-white/10 dark:bg-slate-950">
+      <div className="relative max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-4xl border border-white/10 bg-slate-950 shadow-2xl">
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute right-6 top-6 z-10 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-950 transition hover:bg-slate-200 dark:bg-slate-900 dark:text-white dark:hover:bg-slate-800"
+          className="absolute right-6 top-6 z-10 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-white transition hover:bg-slate-800"
         >
           <span className="text-2xl leading-none">×</span>
         </button>
 
         {/* Image Carousel */}
         {currentImage && (
-          <div className="relative h-96 w-full overflow-hidden bg-slate-200 dark:bg-slate-800">
+          <div className="relative h-96 w-full overflow-hidden bg-slate-800">
             <img
               src={currentImage}
               alt={`${title} - ${currentImageIndex + 1}`}
@@ -64,7 +64,7 @@ export default function ProjectModal({
             {images && images.length > 1 && (
               <button
                 onClick={goToPrevious}
-                className="absolute left-4 top-1/2 -translate-y-1/2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-slate-950 transition hover:bg-white dark:bg-slate-900/90 dark:text-white dark:hover:bg-slate-900"
+                className="absolute left-4 top-1/2 -translate-y-1/2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-900/90 text-white transition hover:bg-slate-900"
               >
                 ‹
               </button>
@@ -74,7 +74,7 @@ export default function ProjectModal({
             {images && images.length > 1 && (
               <button
                 onClick={goToNext}
-                className="absolute right-4 top-1/2 -translate-y-1/2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-slate-950 transition hover:bg-white dark:bg-slate-900/90 dark:text-white dark:hover:bg-slate-900"
+                className="absolute right-4 top-1/2 -translate-y-1/2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-900/90 text-white transition hover:bg-slate-900"
               >
                 ›
               </button>
@@ -85,8 +85,8 @@ export default function ProjectModal({
         {/* Content */}
         <div className="space-y-6 p-8">
           <div>
-            <h2 className="text-3xl font-semibold text-slate-950 dark:text-white">{title}</h2>
-            <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-300">{fullDescription}</p>
+            <h2 className="text-3xl font-semibold text-white">{title}</h2>
+            <p className="mt-4 text-base leading-7 text-slate-300">{fullDescription}</p>
           </div>
 
           {/* Tags */}
@@ -94,7 +94,7 @@ export default function ProjectModal({
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="rounded-full border border-slate-200/70 bg-slate-100 px-4 py-2 text-sm font-medium text-slate-950 dark:border-white/10 dark:bg-slate-900 dark:text-slate-200"
+                className="rounded-full border border-white/10 bg-slate-900 px-4 py-2 text-sm font-medium text-slate-200"
               >
                 {tag}
               </span>
@@ -104,7 +104,7 @@ export default function ProjectModal({
           {/* Image thumbnails */}
           {images && images.length > 1 && (
             <div className="space-y-2">
-              <p className="text-sm font-medium text-slate-600 dark:text-slate-400">Gallery</p>
+              <p className="text-sm font-medium text-slate-400">Gallery</p>
               <div className="flex gap-2 overflow-x-auto pb-2">
                 {images.map((img, index) => (
                   <button
@@ -113,7 +113,7 @@ export default function ProjectModal({
                     className={`h-16 w-16 shrink-0 rounded-lg border-2 transition ${
                       index === currentImageIndex
                         ? 'border-sky-500'
-                        : 'border-slate-200 hover:border-slate-300 dark:border-slate-700 dark:hover:border-slate-600'
+                        : 'border-slate-700 hover:border-slate-600'
                     }`}
                   >
                     <img src={img} alt={`Thumbnail ${index + 1}`} className="h-full w-full object-cover rounded-md" />

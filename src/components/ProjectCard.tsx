@@ -11,7 +11,7 @@ export default function ProjectCard({ title, shortDescription, tags, accent, ima
   return (
     <article
       onClick={onClick}
-      className="cursor-pointer overflow-hidden rounded-4xl border border-slate-200/70 bg-white shadow-[0_25px_60px_rgba(15,23,42,0.08)] backdrop-blur-xl transition hover:-translate-y-1 hover:shadow-[0_35px_90px_rgba(15,23,42,0.15)] dark:border-white/10 dark:bg-white/5 dark:shadow-[0_25px_60px_rgba(15,23,42,0.25)]"
+      className="cursor-pointer overflow-hidden rounded-4xl border border-white/10 bg-white/5 shadow-[0_25px_60px_rgba(15,23,42,0.25)] backdrop-blur-xl transition hover:-translate-y-1 hover:shadow-[0_35px_90px_rgba(15,23,42,0.15)]"
     >
       <div className={`h-52 w-full overflow-hidden ${!image ? `bg-linear-to-br ${accent}` : ''}`}>
         {image ? (
@@ -21,13 +21,13 @@ export default function ProjectCard({ title, shortDescription, tags, accent, ima
         )}
       </div>
       <div className="space-y-4 p-6">
-        <h3 className="text-xl font-semibold text-slate-950 dark:text-white">{title}</h3>
-        <p className="text-sm leading-7 text-slate-700 dark:text-slate-300">{shortDescription}</p>
+        <h3 className="text-xl font-semibold text-white">{title}</h3>
+        <p className="text-sm leading-7 text-slate-300">{shortDescription}</p>
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-full border border-slate-200/70 bg-slate-100 px-3 py-1 text-xs font-medium text-slate-950 dark:border-white/10 dark:bg-slate-950/80 dark:text-slate-200"
+              className="rounded-full border border-white/10 bg-slate-950/80 px-3 py-1 text-xs font-medium text-slate-200"
             >
               {tag}
             </span>

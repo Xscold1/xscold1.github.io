@@ -57,7 +57,7 @@ export default function Projects() {
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
           <p className="text-sm uppercase tracking-[0.32em] text-sky-500/75">Featured Projects</p>
-          <h2 className="mt-3 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl dark:text-white">A selection of my recent work</h2>
+          <h2 className="mt-3 text-4xl font-semibold tracking-tight text-white sm:text-5xl">A selection of my recent work</h2>
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">

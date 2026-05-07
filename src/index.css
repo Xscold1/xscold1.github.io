@@ -3,12 +3,6 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    color-scheme: light;
-    background-color: rgb(248, 250, 252);
-    color: rgb(15, 23, 42);
-  }
-
-  html.dark {
     color-scheme: dark;
     background-color: rgb(15, 23, 42);
     color: rgb(241, 245, 249);

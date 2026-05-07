@@ -48,9 +48,9 @@ export default function About() {
   return (
     <section id="about" className="px-6 py-20 sm:px-8 lg:px-10">
       <div className="mx-auto max-w-7xl space-y-10">
-        <div className="rounded-4xl border border-slate-200/70 bg-white/90 p-10 shadow-[0_30px_80px_rgba(15,23,42,0.08)] backdrop-blur-xl dark:border-white/10 dark:bg-white/5 dark:shadow-[0_30px_80px_rgba(15,23,42,0.25)]">
-          <h2 className="text-4xl font-semibold text-slate-950 dark:text-white">About Me</h2>
-          <div className="mt-6 space-y-6 text-base leading-8 text-slate-700 dark:text-slate-300">
+        <div className="rounded-4xl border border-white/10 bg-white/5 p-10 shadow-[0_30px_80px_rgba(15,23,42,0.25)] backdrop-blur-xl">
+          <h2 className="text-4xl font-semibold text-white">About Me</h2>
+          <div className="mt-6 space-y-6 text-base leading-8 text-slate-300">
             <p>
               I’m a full-stack developer with over 2 years of experience building web applications using Node.js, PHP, and modern JavaScript frameworks.
             </p>
@@ -74,22 +74,22 @@ export default function About() {
             </a>
             <a
               href="#projects"
-              className="inline-flex h-12 items-center justify-center rounded-full border border-slate-300 bg-white/90 px-5 text-sm font-semibold text-slate-950 transition hover:border-slate-400 hover:bg-slate-100 dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:border-sky-400/40 dark:hover:bg-slate-900/10"
+              className="inline-flex h-12 items-center justify-center rounded-full border border-white/10 bg-white/5 px-5 text-sm font-semibold text-white transition hover:border-sky-400/40 hover:bg-slate-900/10"
             >
               View Projects
             </a>
           </div>
         </div>
 
-        <div className="rounded-4xl border border-slate-200/70 bg-white/90 p-8 shadow-[0_30px_80px_rgba(15,23,42,0.08)] backdrop-blur-xl dark:border-white/10 dark:bg-white/5 dark:shadow-[0_30px_80px_rgba(15,23,42,0.25)]">
+        <div className="rounded-4xl border border-white/10 bg-white/5 p-8 shadow-[0_30px_80px_rgba(15,23,42,0.25)] backdrop-blur-xl">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <h3 className="text-2xl font-semibold text-slate-950 dark:text-white">Skills & Technologies</h3>
-              <p className="mt-2 max-w-2xl text-sm text-slate-500 dark:text-slate-400">
+              <h3 className="text-2xl font-semibold text-white">Skills & Technologies</h3>
+              <p className="mt-2 max-w-2xl text-sm text-slate-400">
                 Core tools and frameworks I use to build fast, maintainable products.
               </p>
             </div>
-            <span className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1.5 text-xs font-semibold text-slate-700 dark:bg-slate-900 dark:text-slate-200">
+            <span className="inline-flex items-center rounded-full bg-slate-900 px-3 py-1.5 text-xs font-semibold text-slate-200">
               Swipe to explore
             </span>
           </div>
